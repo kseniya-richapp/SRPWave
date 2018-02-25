@@ -1,26 +1,121 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Products List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProductsListViewController" customModule="WaveExam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0T-Er-JWu" customClass="ProductViewShadow" customModule="WaveExam" customModuleProvider="target">
+                                <rect key="frame" x="32" y="100" width="350" height="607"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-ot-98A">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="607"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" red="0.30588235289999999" green="0.58039215690000001" blue="0.91372549020000005" alpha="0.47420804794520549" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.87067734770000005" green="0.80188104780000002" blue="0.70528721439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="65" id="fUQ-fk-YTA" customClass="ProductTableViewCell" customModule="WaveExam" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="350" height="65"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUQ-fk-YTA" id="1Lj-rQ-vfT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="64.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-48-8Pv">
+                                                            <rect key="frame" x="18.000000000000007" y="0.0" width="102.66666666666669" height="64.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="16"/>
+                                                            <color key="textColor" red="0.25882352939999997" green="0.63529411759999999" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBw-cn-vJK">
+                                                            <rect key="frame" x="310.66666666666674" y="0.0" width="19.333333333333314" height="64.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                                            <color key="textColor" red="0.12549019610000001" green="0.21176470589999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Tzc-48-8Pv" firstAttribute="leading" secondItem="1Lj-rQ-vfT" secondAttribute="leading" constant="18" id="JuP-kW-zTo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WBw-cn-vJK" secondAttribute="trailing" constant="20" id="ScG-7m-8Tk"/>
+                                                        <constraint firstItem="WBw-cn-vJK" firstAttribute="centerY" secondItem="Tzc-48-8Pv" secondAttribute="centerY" id="T4e-3H-x4G"/>
+                                                        <constraint firstItem="WBw-cn-vJK" firstAttribute="top" secondItem="1Lj-rQ-vfT" secondAttribute="top" id="Xd1-tx-IDV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WBw-cn-vJK" secondAttribute="bottom" id="fMF-Hy-lhF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Tzc-48-8Pv" secondAttribute="bottom" id="gfQ-GF-aK9"/>
+                                                        <constraint firstItem="Tzc-48-8Pv" firstAttribute="top" secondItem="1Lj-rQ-vfT" secondAttribute="top" id="orp-8C-w0R"/>
+                                                        <constraint firstItem="WBw-cn-vJK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tzc-48-8Pv" secondAttribute="trailing" priority="999" constant="9" id="z4d-mp-Ohh"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="lblName" destination="Tzc-48-8Pv" id="RYj-eT-vVx"/>
+                                                    <outlet property="lblPrice" destination="WBw-cn-vJK" id="kgJ-2I-auE"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87067734771573602" green="0.8018810477771825" blue="0.70528721438808151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mQa-ot-98A" firstAttribute="leading" secondItem="Q0T-Er-JWu" secondAttribute="leading" id="AYY-DM-zb8"/>
+                                    <constraint firstAttribute="bottom" secondItem="mQa-ot-98A" secondAttribute="bottom" id="TEE-vP-3vp"/>
+                                    <constraint firstItem="mQa-ot-98A" firstAttribute="top" secondItem="Q0T-Er-JWu" secondAttribute="top" id="kxM-vW-NjR"/>
+                                    <constraint firstAttribute="trailing" secondItem="mQa-ot-98A" secondAttribute="trailing" id="ys5-QT-aAp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6j-ub-rGF">
+                                <rect key="frame" x="51" y="42" width="311" height="38"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="30"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.63529411764705879" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q0T-Er-JWu" secondAttribute="bottom" constant="29" id="5nT-Ku-4md"/>
+                            <constraint firstItem="Q0T-Er-JWu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="FRk-qk-35y"/>
+                            <constraint firstItem="Q0T-Er-JWu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="J2r-n5-5ea"/>
+                            <constraint firstItem="A6j-ub-rGF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="O8F-ke-wpf"/>
+                            <constraint firstItem="A6j-ub-rGF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="Uc2-mb-u8P"/>
+                            <constraint firstItem="A6j-ub-rGF" firstAttribute="centerX" secondItem="Q0T-Er-JWu" secondAttribute="centerX" id="e3P-wy-4YP"/>
+                            <constraint firstItem="Q0T-Er-JWu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="keY-G9-drj"/>
+                            <constraint firstItem="Q0T-Er-JWu" firstAttribute="top" secondItem="A6j-ub-rGF" secondAttribute="bottom" constant="20" id="rqC-sd-vFZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listTitle" destination="A6j-ub-rGF" id="poE-5S-AGe"/>
+                        <outlet property="productsDelegate" destination="wXn-8F-4vT" id="Cth-81-H2J"/>
+                        <outlet property="tblVwProducts" destination="mQa-ot-98A" id="svN-rx-xT0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="wXn-8F-4vT" userLabel="productsDataManager" customClass="ProductsDataManager" customModule="WaveExam" customModuleProvider="target"/>
             </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="122.28260869565219"/>
         </scene>
     </scenes>
 </document>

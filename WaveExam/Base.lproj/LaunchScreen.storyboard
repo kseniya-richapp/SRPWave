@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,47 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCF-TE-sQo">
+                                <rect key="frame" x="20" y="276" width="335" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Exam App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-Wg-DWj">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
+                                        <color key="textColor" red="0.25882352939999997" green="0.63529411759999999" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kseniya Efimov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-a6-5aS">
+                                        <rect key="frame" x="0.0" y="69.5" width="335" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <color key="textColor" red="0.12549019607843137" green="0.21176470588235294" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bYj-a6-5aS" secondAttribute="trailing" id="JFe-VF-6Oh"/>
+                                    <constraint firstItem="bYj-a6-5aS" firstAttribute="top" secondItem="HPp-Wg-DWj" secondAttribute="bottom" constant="30" id="f5M-dg-zMk"/>
+                                    <constraint firstAttribute="trailing" secondItem="HPp-Wg-DWj" secondAttribute="trailing" id="h7O-b3-mWp"/>
+                                    <constraint firstItem="bYj-a6-5aS" firstAttribute="leading" secondItem="HCF-TE-sQo" secondAttribute="leading" id="k8Q-oV-MrQ"/>
+                                    <constraint firstItem="HPp-Wg-DWj" firstAttribute="top" secondItem="HCF-TE-sQo" secondAttribute="top" id="uh9-jf-zRq"/>
+                                    <constraint firstAttribute="bottom" secondItem="bYj-a6-5aS" secondAttribute="bottom" constant="20" id="v01-7h-sXX"/>
+                                    <constraint firstItem="HPp-Wg-DWj" firstAttribute="leading" secondItem="HCF-TE-sQo" secondAttribute="leading" id="wO7-OG-eS9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HCF-TE-sQo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="KHn-1w-2GD"/>
+                            <constraint firstItem="HCF-TE-sQo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Mhs-FR-T8m"/>
+                            <constraint firstItem="HCF-TE-sQo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TdP-4p-czm"/>
+                            <constraint firstAttribute="trailing" secondItem="HCF-TE-sQo" secondAttribute="trailing" constant="20" id="bNZ-Ki-YDI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
 </document>
