@@ -36,7 +36,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="350" height="65"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUQ-fk-YTA" id="1Lj-rQ-vfT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="64.666666666666671"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="65"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-48-8Pv">
