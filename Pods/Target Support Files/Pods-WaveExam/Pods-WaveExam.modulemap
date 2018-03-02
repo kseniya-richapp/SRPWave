@@ -1,0 +1,6 @@
+framework module Pods_WaveExam {
+  umbrella header "Pods-WaveExam-umbrella.h"
+
+  export *
+  module * { export * }
+}

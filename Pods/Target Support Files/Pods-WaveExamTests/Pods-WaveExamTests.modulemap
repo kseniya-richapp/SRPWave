@@ -1,0 +1,6 @@
+framework module Pods_WaveExamTests {
+  umbrella header "Pods-WaveExamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
